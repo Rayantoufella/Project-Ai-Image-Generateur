@@ -29,13 +29,14 @@
                         <!-- prompt container -->
                         <div class="prompt-container">
                             <textarea  class="prompt-input" placeholder="Enter your prompt here..." required autofocus></textarea>
-                            <button type="botton" class="prompt-btn">
-                              <i class="fa-solid fa-dice"></i>
-                            </button>
                         </div>
 
                         <!-- prompt action -->
                         <div class="prompt-action">
+                            <button type="button" class="prompt-btn">
+                              <i class="fa-solid fa-dice"></i>
+                            </button>
+
                             <div class="select-wrapper">
                                 <select class="custom-select" required >
                                     <option value="" disabled selected>Select a model</option>
@@ -45,32 +46,31 @@
                                     <option value="prompthero/openjourney">OpenJourney</option>
                                 </select>
                             </div>
-                        </div> 
+                         
 
-                        <div class="select-wrapper">
-                            <select class="custom-select" required >
-                                <option value="" selected disabled>Image Count</option>
-                                <option value="1">1 Image</option>
-                                <option value="2">2 Image</option>        
-                                <option value="3">3 Image</option>
-                                <option value="4">4 Image</option>
-                            </select>
+                            <div class="select-wrapper">
+                                <select class="custom-select" required >
+                                    <option value="" selected disabled>Image Count</option>
+                                    <option value="1">1 Image</option>
+                                    <option value="2">2 Image</option>        
+                                    <option value="3">3 Image</option>
+                                    <option value="4">4 Image</option>
+                                </select>
+                            </div>
+
+                            <div class="select-wrapper">
+                                <select class="custom-select" required >
+                                    <option value="" selected disabled>Image Count</option>
+                                    <option value="1/1">Square (1:1)</option>
+                                    <option value="16/9">Landscape (16:9)</option>
+                                    <option value="9/16">Portrait (9:16)</option>
+                                </select>
+                            </div>
                         </div>
-
-                        <div class="select-wrapper">
-                            <select class="custom-select" required >
-                                <option value="" selected disabled>Image Count</option>
-                                <option value="1/1">Square (1:1)</option>
-                                <option value="16/9">Landscape (16:9)</option>
-                                <option value="9/16">Portrait (9:16)</option>
-                            </select>
-                        </div>
-
 
                         <button type="submit" class="generat-btn">
-                            <i class="fa-solid fa-wand-sparkles"> 
-                                Generate
-                            </i>
+                            <i class="fa-solid fa-wand-sparkles"></i>
+                            <span>Generate</span>
                         </button>
 
 
@@ -78,4 +78,7 @@
                 </div>
             </header>
         </div>
+        
+        <script src="script.js"></script>
     </body>
+</html>
